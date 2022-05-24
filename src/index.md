@@ -1,6 +1,8 @@
 ---
-title: My first page
+title: Serapis
 layout: base.njk
+eleventyNavigation: 
+    key: Home
 templateEngineOverride: njk,md
 ---
 
