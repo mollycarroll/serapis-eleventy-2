@@ -2,18 +2,18 @@ backend:
   name: git-gateway
   branch: main
 
-# media_folder: "_data/images/uploads"
-# public_folder: "/images/uploads"
+media_folder: '_data/images/uploads'
+public_folder: '/images/uploads'
 
 collections:
-  - name: "blog"
-    label: "Blog posts"
-    folder: "src/blog"
+  - name: 'blog'
+    label: 'Blog posts'
+    folder: 'src/blog'
     create: true
-    slug: "{{year}}"-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "_includes/post.njk" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Date", name: "date", widget: "date", default: "" }
-      - { label: "Post Body", name: "body", widget: "markdown" }
+    - { label: 'Layout', name: 'layout', widget: 'hidden', default: '_includes/post.njk' }
+    - { label: 'Title', name: 'title', widget: 'string' }
+    - { label: 'Description', name: 'description', widget: 'string' }
+    - { label: 'Date', name: 'date', widget: 'date', default: '' }
+    - { label: 'Post Body', name: 'body', widget: 'markdown' }
