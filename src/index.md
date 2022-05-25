@@ -6,6 +6,6 @@ eleventyNavigation:
 templateEngineOverride: njk,md
 ---
 
-test for home/index page
+test for home/index page - this is the content only
 
 {% include "postlist.njk" %}

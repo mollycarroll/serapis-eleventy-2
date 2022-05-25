@@ -17,3 +17,15 @@ collections:
     - { label: 'Description', name: 'description', widget: 'string' }
     - { label: 'Date', name: 'date', widget: 'date', default: '' }
     - { label: 'Post Body', name: 'body', widget: 'markdown' }
+
+  - name: 'gigs'
+    label: 'Shows'
+    folder: 'src/gigs'
+    create: true
+    slug: '{{month}}-{{day}}-{{venue}}'
+    fields:
+    - { label: 'Layout', name: 'layout', widget: 'hidden', default: '_includes/gig.njk' }
+    - { label: 'Date', name: 'date', widget: 'date', default: '' }
+    - { label: 'Time', name: 'time', widget: 'string', default: '' }
+    - { label: 'Venue', name: 'venue', widget: 'string', default: '' }
+    - { label: 'City', name: 'city', widget: 'string', default: '' }
