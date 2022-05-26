@@ -11,7 +11,8 @@
   "author": "Molly Carroll",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "@11ty/eleventy": "^1.0.1",
+    "nunjucks-date": "^1.5.0"
   },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.3.3"
