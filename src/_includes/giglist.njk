@@ -1,5 +1,8 @@
 <ul>
 {% for gig in collections.gigs %}
-<li><a href="{{ gig.url }}">{{ gig.data.date }} - {{ gig.data.venue }}</a></li>
+<li>
+    <h2>{{ gig.data.venue }}</h2>
+    <p>{{ gig.data.date }}</p>
+</li>
 {% endfor %}
 </ul>
